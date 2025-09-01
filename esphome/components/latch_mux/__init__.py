@@ -75,7 +75,7 @@ LATCH_MUX_PIN_SCHEMA = pins.gpio_base_schema(
     cv.int_range(min=0, max=2047),
     modes=[CONF_OUTPUT],
     mode_validator=_validate_output_mode,
-    invertable=True,
+    invertible=True,
 ).extend(
     {
         cv.Required(CONF_LATCHMUX): cv.use_id(LatchMuxComponent),
